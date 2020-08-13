@@ -1,0 +1,3 @@
+[submodule "Globalika/vendor/spdlog"]
+	path = Globalika/vendor/spdlog
+	url = https://github.com/gabime/spdlog

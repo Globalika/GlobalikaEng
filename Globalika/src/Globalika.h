@@ -1,8 +1,8 @@
 #pragma once
 
 //For use by Globalika applications
-#include "stdio.h"
 #include "Globalika/Application.h"
+#include "Globalika/Log.h"
 
 
 // ---Entry Point------------------------
