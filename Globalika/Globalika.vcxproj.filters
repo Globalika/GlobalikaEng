@@ -4,6 +4,9 @@
     <Filter Include="Globalika">
       <UniqueIdentifier>{CBE49738-374F-4CAF-808D-FD54EC362A04}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Globalika\Events">
+      <UniqueIdentifier>{4FDEF88D-3BD7-17E0-6409-FD645061F7EB}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Globalika.h" />
@@ -15,6 +18,18 @@
     </ClInclude>
     <ClInclude Include="src\Globalika\EntryPoint.h">
       <Filter>Globalika</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Globalika\Events\ApplicationEvent.h">
+      <Filter>Globalika\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Globalika\Events\Event.h">
+      <Filter>Globalika\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Globalika\Events\KeyEvent.h">
+      <Filter>Globalika\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Globalika\Events\MouseEvent.h">
+      <Filter>Globalika\Events</Filter>
     </ClInclude>
     <ClInclude Include="src\Globalika\Log.h">
       <Filter>Globalika</Filter>
