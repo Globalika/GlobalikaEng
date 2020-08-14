@@ -1,3 +1,4 @@
+#include "globpch.h"
 #include "Application.h"
 
 #include "Globalika/Events/ApplicationEvent.h"

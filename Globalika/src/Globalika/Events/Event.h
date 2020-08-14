@@ -1,9 +1,8 @@
 #pragma once
+#include "globpch.h"
 
 #include "Globalika/Core.h"
 
-#include <string>
-#include <functional>
 
 namespace Globalika {
 

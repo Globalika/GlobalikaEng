@@ -18,6 +18,9 @@ project "Globalika"
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
 
+	pchheader "globpch.h"
+	pchsource "Globalika/src/globpch.cpp"
+
 	files
 	{
 		"%{prj.name}/src/**.h",
