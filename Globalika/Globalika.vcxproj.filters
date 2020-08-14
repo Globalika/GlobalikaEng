@@ -35,6 +35,8 @@
       <Filter>Globalika</Filter>
     </ClInclude>
     <ClInclude Include="src\globpch.h" />
+    <ClInclude Include="src\Globalika\Window.h" />
+    <ClInclude Include="src\Platform\Windows\WindowsWindow.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Globalika\Application.cpp">
@@ -44,5 +46,6 @@
       <Filter>Globalika</Filter>
     </ClCompile>
     <ClCompile Include="src\globpch.cpp" />
+    <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp" />
   </ItemGroup>
 </Project>

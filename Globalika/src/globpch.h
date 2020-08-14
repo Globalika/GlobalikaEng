@@ -12,6 +12,9 @@
 #include <unordered_map>
 #include <unordered_set>
 
+#include "Globalika/Log.h"
+
+
 #ifdef GLOB_PLATFORM_WINDOWS
 	#include <Windows.h>
 #endif
