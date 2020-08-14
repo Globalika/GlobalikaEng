@@ -66,14 +66,17 @@ project "Globalika"
     
     filter "configurations:Debug"
         defines "GLOB_DEBUG"
+        buildoptions "/MDd"
         symbols "On"
     
     filter "configurations:Release"
         defines "GLOB_RELEASE"
+        buildoptions "/MD"
         optimize "On"
     
     filter "configurations:Dist"
         defines "GLOB_DIST"
+        buildoptions "/MD"
         optimize "On"
 
 project "Sandbox"
@@ -115,12 +118,15 @@ project "Sandbox"
     
     filter "configurations:Debug"
         defines "GLOB_DEBUG"
+        buildoptions "/MDd"
         symbols "On"
     
     filter "configurations:Release"
         defines "GLOB_RELEASE"
+        buildoptions "/MD"
         optimize "On"
     
     filter "configurations:Dist"
         defines "GLOB_DIST"
+        buildoptions "/MD"
         optimize "On"

@@ -7,6 +7,12 @@
     <Filter Include="Globalika\Events">
       <UniqueIdentifier>{4FDEF88D-3BD7-17E0-6409-FD645061F7EB}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Platform">
+      <UniqueIdentifier>{2AC788B4-1694-E3BF-3FAD-D1672BD9184E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform\Windows">
+      <UniqueIdentifier>{64FBD71A-50F4-F66C-7926-DCF1657ED678}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Globalika.h" />
@@ -31,21 +37,39 @@
     <ClInclude Include="src\Globalika\Events\MouseEvent.h">
       <Filter>Globalika\Events</Filter>
     </ClInclude>
+    <ClInclude Include="src\Globalika\Layer.h">
+      <Filter>Globalika</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Globalika\LayerStack.h">
+      <Filter>Globalika</Filter>
+    </ClInclude>
     <ClInclude Include="src\Globalika\Log.h">
       <Filter>Globalika</Filter>
     </ClInclude>
+    <ClInclude Include="src\Globalika\Window.h">
+      <Filter>Globalika</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\Windows\WindowsWindow.h">
+      <Filter>Platform\Windows</Filter>
+    </ClInclude>
     <ClInclude Include="src\globpch.h" />
-    <ClInclude Include="src\Globalika\Window.h" />
-    <ClInclude Include="src\Platform\Windows\WindowsWindow.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Globalika\Application.cpp">
       <Filter>Globalika</Filter>
     </ClCompile>
+    <ClCompile Include="src\Globalika\Layer.cpp">
+      <Filter>Globalika</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Globalika\LayerStack.cpp">
+      <Filter>Globalika</Filter>
+    </ClCompile>
     <ClCompile Include="src\Globalika\Log.cpp">
       <Filter>Globalika</Filter>
     </ClCompile>
+    <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp">
+      <Filter>Platform\Windows</Filter>
+    </ClCompile>
     <ClCompile Include="src\globpch.cpp" />
-    <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp" />
   </ItemGroup>
 </Project>
