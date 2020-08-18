@@ -14,9 +14,10 @@ outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 -- Include directories relative to root folder (solution directory)
 IncludeDir = {}
 IncludeDir["GLFW"] = "Globalika/vendor/GLFW/include"
+IncludeDir["Glad"] = "Globalika/vendor/Glad/include"
 
 include "Globalika/vendor/GLFW"
-
+include "Globalika/vendor/Glad"
 
 project "Globalika"
     location "Globalika"
@@ -39,12 +40,14 @@ project "Globalika"
     {
         "%{prj.name}/src",
         "%{prj.name}/vendor/spdlog/include",
-        "%{IncludeDir.GLFW}"
+        "%{IncludeDir.GLFW}",
+        "%{IncludeDir.Glad}"
     }
     
     links 
     { 
         "GLFW",
+        "Glad",
         "opengl32.lib"
     }
     
@@ -56,7 +59,8 @@ project "Globalika"
         defines
         {
         	"GLOB_PLATFORM_WINDOWS",
-        	"GLOB_BUILD_DLL"
+        	"GLOB_BUILD_DLL",
+            "GLFW_INCLUDE_NONE"
         }
         
         postbuildcommands
