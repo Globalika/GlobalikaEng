@@ -4,3 +4,6 @@
 [submodule "Globalika/vendor/GLFW"]
 	path = Globalika/vendor/GLFW
 	url = https://github.com/Globalika/glfw
+[submodule "Globalika/vendor/imgui"]
+	path = Globalika/vendor/imgui
+	url = https://github.com/Globalika/imgui

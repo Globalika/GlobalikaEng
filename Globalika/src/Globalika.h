@@ -5,6 +5,8 @@
 #include "Globalika/Layer.h"
 #include "Globalika/Log.h"
 
+#include "Globalika/ImGui/ImGuiLayer.h"
+
 
 // ---Entry Point------------------------
 #include "Globalika/EntryPoint.h"
