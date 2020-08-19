@@ -21,10 +21,13 @@ include "Globalika/vendor/GLFW"
 include "Globalika/vendor/Glad"
 include "Globalika/vendor/imgui"
 
+--startproject "Sandbox"
+
 project "Globalika"
     location "Globalika"
     kind "SharedLib"
     language "C++"
+    staticruntime "off"
     
     targetdir ("bin/" .. outputdir .. "/%{prj.name}")
     objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
@@ -57,7 +60,6 @@ project "Globalika"
     
     filter "system:windows"
         cppdialect "C++17"
-        staticruntime "On"
         systemversion "latest"
         
         defines
@@ -74,28 +76,28 @@ project "Globalika"
     
     filter "configurations:Debug"
         defines "GLOB_DEBUG"
-        buildoptions "/MDd"
+        runtime "Debug"
         symbols "On"
     
     filter "configurations:Release"
         defines "GLOB_RELEASE"
-        buildoptions "/MD"
+        runtime "Release"
         optimize "On"
     
     filter "configurations:Dist"
         defines "GLOB_DIST"
-        buildoptions "/MD"
+        runtime "Release"
         optimize "On"
 
 project "Sandbox"
     location "Sandbox"
     kind "ConsoleApp"
     language "C++"
-    
+    staticruntime "off"
+
     targetdir ("bin/" .. outputdir .. "/%{prj.name}")
     objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
-    
-    
+     
     files
     {
         "%{prj.name}/src/**.h",
@@ -115,7 +117,6 @@ project "Sandbox"
     
     filter "system:windows"
         cppdialect "C++17"
-        staticruntime "On"
         systemversion "latest"
     	
     defines
@@ -126,15 +127,15 @@ project "Sandbox"
     
     filter "configurations:Debug"
         defines "GLOB_DEBUG"
-        buildoptions "/MDd"
+        runtime "Debug"
         symbols "On"
     
     filter "configurations:Release"
         defines "GLOB_RELEASE"
-        buildoptions "/MD"
+        runtime "Release"
         optimize "On"
     
     filter "configurations:Dist"
         defines "GLOB_DIST"
-        buildoptions "/MD"
+        runtime "Release"
         optimize "On"

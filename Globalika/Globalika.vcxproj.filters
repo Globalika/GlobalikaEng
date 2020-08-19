@@ -7,6 +7,9 @@
     <Filter Include="Globalika\Events">
       <UniqueIdentifier>{4FDEF88D-3BD7-17E0-6409-FD645061F7EB}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Globalika\ImGui">
+      <UniqueIdentifier>{35866969-A111-D72D-AA22-5A22162D332E}</UniqueIdentifier>
+    </Filter>
     <Filter Include="Platform">
       <UniqueIdentifier>{2AC788B4-1694-E3BF-3FAD-D1672BD9184E}</UniqueIdentifier>
     </Filter>
@@ -40,6 +43,9 @@
     <ClInclude Include="src\Globalika\Events\MouseEvent.h">
       <Filter>Globalika\Events</Filter>
     </ClInclude>
+    <ClInclude Include="src\Globalika\ImGui\ImGuiLayer.h">
+      <Filter>Globalika\ImGui</Filter>
+    </ClInclude>
     <ClInclude Include="src\Globalika\Layer.h">
       <Filter>Globalika</Filter>
     </ClInclude>
@@ -59,11 +65,13 @@
       <Filter>Platform\Windows</Filter>
     </ClInclude>
     <ClInclude Include="src\globpch.h" />
-    <ClInclude Include="src\Globalika\ImGui\ImGuiLayer.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Globalika\Application.cpp">
       <Filter>Globalika</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Globalika\ImGui\ImGuiLayer.cpp">
+      <Filter>Globalika\ImGui</Filter>
     </ClCompile>
     <ClCompile Include="src\Globalika\Layer.cpp">
       <Filter>Globalika</Filter>
@@ -81,6 +89,5 @@
       <Filter>Platform\Windows</Filter>
     </ClCompile>
     <ClCompile Include="src\globpch.cpp" />
-    <ClCompile Include="src\Globalika\ImGui\ImGuiLayer.cpp" />
   </ItemGroup>
 </Project>
