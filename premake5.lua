@@ -1,13 +1,13 @@
 workspace "Globalika"
     architecture "x64"
-    
+    startproject "Sandbox"
     configurations
     {
         "Debug",
         "Release",
         "Dist"
     }
-
+    
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}" 
 
 
@@ -16,12 +16,12 @@ IncludeDir = {}
 IncludeDir["GLFW"] = "Globalika/vendor/GLFW/include"
 IncludeDir["Glad"] = "Globalika/vendor/Glad/include"
 IncludeDir["ImGui"] = "Globalika/vendor/imgui"
+group "Dependencies"
+    include "Globalika/vendor/GLFW"
+    include "Globalika/vendor/Glad"
+    include "Globalika/vendor/imgui"
 
-include "Globalika/vendor/GLFW"
-include "Globalika/vendor/Glad"
-include "Globalika/vendor/imgui"
-
---startproject "Sandbox"
+group ""
 
 project "Globalika"
     location "Globalika"
@@ -71,7 +71,7 @@ project "Globalika"
         
         postbuildcommands
         {
-        	("{COPY} %{cfg.buildtarget.relpath} ../bin/" .. outputdir .. "/Sandbox")
+            ("{COPY} %{cfg.buildtarget.relpath} \"../bin/" .. outputdir .. "/Sandbox/\"")
         }
     
     filter "configurations:Debug"
