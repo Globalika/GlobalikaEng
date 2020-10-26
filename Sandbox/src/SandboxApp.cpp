@@ -10,12 +10,19 @@ public:
 
 	void OnUpdate() override
 	{
-		GLOB_INFO("ExampleLayer::Update");
+		if (Globalika::Input::IsKeyPressed(GLOB_KEY_TAB))
+			GLOB_TRACE("Tab key is pressed (poll)!");
 	}
 
 	void OnEvent(Globalika::Event& event) override
 	{
-		GLOB_TRACE("{0}", event);
+		if (event.GetEventType() == Globalika::EventType::KeyPressed)
+		{
+			Globalika::KeyPressedEvent& e = (Globalika::KeyPressedEvent&)event;
+			if (e.GetKeyCode() == GLOB_KEY_TAB)
+				GLOB_TRACE("Tab key is pressed (event)!");
+			GLOB_TRACE("{0}", (char)e.GetKeyCode());
+		}
 	}
 
 };

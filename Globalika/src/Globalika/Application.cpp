@@ -5,7 +5,7 @@
 
 #include <glad/glad.h>
 
-#include "input.h"
+#include "Input.h"
 
 namespace Globalika {
 
@@ -61,8 +61,8 @@ namespace Globalika {
 			for (Layer* layer : m_LayerStack)
 				layer->OnUpdate();
 
-			auto [x, y] = Input::GetMousePosition();
-			GLOB_CORE_TRACE("{0}, {1}", x, y);
+			//auto [x, y] = Input::GetMousePosition();
+			//GLOB_CORE_TRACE("{0}, {1}", x, y);
 			m_Window->OnUpdate();
 		}
 	}

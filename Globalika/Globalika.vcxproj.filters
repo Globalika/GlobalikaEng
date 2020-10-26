@@ -67,6 +67,8 @@
     <ClInclude Include="src\globpch.h" />
     <ClInclude Include="src\Globalika\Input.h" />
     <ClInclude Include="src\Platform\Windows\WindowsInput.h" />
+    <ClInclude Include="src\Globalika\KeyCodes.h" />
+    <ClInclude Include="src\Globalika\MouseButtonCodes.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Globalika\Application.cpp">

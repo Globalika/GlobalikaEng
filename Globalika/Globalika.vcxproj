@@ -159,9 +159,11 @@
     <ClInclude Include="src\Globalika\Events\MouseEvent.h" />
     <ClInclude Include="src\Globalika\ImGui\ImGuiLayer.h" />
     <ClInclude Include="src\Globalika\Input.h" />
+    <ClInclude Include="src\Globalika\KeyCodes.h" />
     <ClInclude Include="src\Globalika\Layer.h" />
     <ClInclude Include="src\Globalika\LayerStack.h" />
     <ClInclude Include="src\Globalika\Log.h" />
+    <ClInclude Include="src\Globalika\MouseButtonCodes.h" />
     <ClInclude Include="src\Globalika\Window.h" />
     <ClInclude Include="src\Platform\OpenGL\ImGuiOpenGLRenderer.h" />
     <ClInclude Include="src\Platform\Windows\WindowsInput.h" />
