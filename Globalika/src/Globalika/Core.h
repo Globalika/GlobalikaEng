@@ -10,7 +10,7 @@
 	#error Globalika only support Windows!
 #endif
 
-#ifndef GLOB_DEBUG
+#ifdef GLOB_DEBUG
 	#define GLOB_ENABLE_ASSERTS
 #endif
 
