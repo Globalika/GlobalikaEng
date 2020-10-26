@@ -1,4 +1,4 @@
-### Hi there 👋 Just learning from Cherno how to wright your own game engine
+### Hi there 👋 Just learning from Cherno how to write your own game engine
 
 <!--
 **Globalika/Globalika** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
