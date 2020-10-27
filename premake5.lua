@@ -113,6 +113,8 @@ project "Sandbox"
     {
         "Globalika/vendor/spdlog/include",
         "Globalika/src",
+        "Globalika/vendor",
+        "%{IncludeDir.ImGui}",
         "%{IncludeDir.glm}"
     }
     

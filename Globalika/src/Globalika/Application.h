@@ -8,6 +8,8 @@
 #include "Globalika/Events/ApplicationEvent.h"
 
 
+#include "Globalika/ImGui/ImGuiLayer.h"
+
 namespace Globalika {
 	class GLOBALIKA_API Application
 	{
@@ -30,6 +32,7 @@ namespace Globalika {
 		bool OnWindowClose(WindowCloseEvent& e);
 
 		std::unique_ptr<Window> m_Window;
+		ImGuiLayer* m_ImGuiLayer;
 		bool m_Running = true;
 		LayerStack m_LayerStack;
 	private:

@@ -165,7 +165,6 @@
     <ClInclude Include="src\Globalika\Log.h" />
     <ClInclude Include="src\Globalika\MouseButtonCodes.h" />
     <ClInclude Include="src\Globalika\Window.h" />
-    <ClInclude Include="src\Platform\OpenGL\ImGuiOpenGLRenderer.h" />
     <ClInclude Include="src\Platform\Windows\WindowsInput.h" />
     <ClInclude Include="src\Platform\Windows\WindowsWindow.h" />
     <ClInclude Include="src\globpch.h" />
@@ -580,11 +579,11 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Globalika\Application.cpp" />
+    <ClCompile Include="src\Globalika\ImGui\ImGuiBuild.cpp" />
     <ClCompile Include="src\Globalika\ImGui\ImGuiLayer.cpp" />
     <ClCompile Include="src\Globalika\Layer.cpp" />
     <ClCompile Include="src\Globalika\LayerStack.cpp" />
     <ClCompile Include="src\Globalika\Log.cpp" />
-    <ClCompile Include="src\Platform\OpenGL\ImGuiOpenGLRenderer.cpp" />
     <ClCompile Include="src\Platform\Windows\WindowsInput.cpp" />
     <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp" />
     <ClCompile Include="src\globpch.cpp">
