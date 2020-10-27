@@ -16,6 +16,8 @@ IncludeDir = {}
 IncludeDir["GLFW"] = "Globalika/vendor/GLFW/include"
 IncludeDir["Glad"] = "Globalika/vendor/Glad/include"
 IncludeDir["ImGui"] = "Globalika/vendor/imgui"
+IncludeDir["glm"] = "Hazel/vendor/glm"
+
 group "Dependencies"
     include "Globalika/vendor/GLFW"
     include "Globalika/vendor/Glad"
@@ -38,7 +40,9 @@ project "Globalika"
     files
     {
         "%{prj.name}/src/**.h",
-        "%{prj.name}/src/**.cpp"
+        "%{prj.name}/src/**.cpp",
+        "%{prj.name}/vendor/glm/glm/**.hpp",
+		"%{prj.name}/vendor/glm/glm/**.inl"
     }
     
     includedirs
@@ -47,7 +51,8 @@ project "Globalika"
         "%{prj.name}/vendor/spdlog/include",
         "%{IncludeDir.GLFW}",
         "%{IncludeDir.Glad}",
-        "%{IncludeDir.ImGui}"
+        "%{IncludeDir.ImGui}",
+		"%{IncludeDir.glm}"
     }
     
     links 
@@ -66,7 +71,7 @@ project "Globalika"
         {
         	"GLOB_PLATFORM_WINDOWS",
         	"GLOB_BUILD_DLL",
-            "GLFW_INCLUDE_NONE"
+            "GLFW_INCLUDE_NONE",
         }
         
         postbuildcommands
@@ -101,13 +106,14 @@ project "Sandbox"
     files
     {
         "%{prj.name}/src/**.h",
-        "%{prj.name}/src/**.cpp"
+        "%{prj.name}/src/**.cpp",
     }
     
     includedirs
     {
         "Globalika/vendor/spdlog/include",
-        "Globalika/src"
+        "Globalika/src",
+        "%{IncludeDir.glm}"
     }
     
     links

@@ -7,3 +7,6 @@
 [submodule "Globalika/vendor/imgui"]
 	path = Globalika/vendor/imgui
 	url = https://github.com/Globalika/imgui
+[submodule "Globalika/vendor/glm"]
+	path = Globalika/vendor/glm
+	url = https://github.com/g-truc/glm
